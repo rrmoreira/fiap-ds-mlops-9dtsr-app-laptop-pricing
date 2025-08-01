@@ -20,7 +20,7 @@ def get_prediction(data):
             Preço estimado para compra
             De acordo com os dados fornceidos, seu laptop podera ser comprado pelo seguinte valor abaixo
         """
-        locale.setlocale(locale.LC_ALL, 'pt_BR')
+        locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
         
         predicted_value_formatted = locale.format_string("%d", result['prediction'], grouping=True)
         
